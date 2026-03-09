@@ -27,6 +27,11 @@ Alma is a persistent memory layer that captures facts, preferences, decisions, a
 Day 1 and day 100 no longer feel the same. Your AI stops forgetting. It starts *understanding*.
 
 <br>
+<div align="center">
+  <img src="img/ChatAlmaLight01.png" alt="Alma by olivares.ai" width="800" />
+  <br><br>
+  <img src="img/ChatAlmaDark01.png" alt="Alma by olivares.ai" width="800" />
+</div>
 
 ---
 
@@ -154,11 +159,11 @@ Separate memory spaces for different contexts — work, personal, projects. Each
 </td>
 <td width="50%" valign="top">
 
-**Multi-Model**
-Powered by Anthropic's Claude (Haiku, Sonnet, Opus). The architecture supports multiple providers — switch models without losing memory or context continuity.
+**Powered by Claude**
+Three Anthropic Claude models: Haiku (fast, everyday tasks), Sonnet (balanced quality and speed), and Opus (deep reasoning, complex work). Switch models mid-conversation without losing memory or context continuity.
 
-**Image Generation** `Coming Soon`
-Multi-provider image generation from chat with persistent memory of your visual preferences. Claude can already generate SVG illustrations inline.
+**Image Studio**
+Generate images with Replicate Flux Pro and Leonardo AI. Standalone studio with model selection, style presets, size options, and a full generation history gallery. BYOK supported.
 
 **Voice**
 Speech-to-text via Deepgram Nova-2. Text-to-speech via ElevenLabs. Talk to your AI naturally, and it remembers what you said.
@@ -167,7 +172,7 @@ Speech-to-text via Deepgram Nova-2. Text-to-speech via ElevenLabs. Talk to your 
 Conversations to PDF, DOCX, HTML, Markdown. Memories to JSON and XLSX. Full data dumps in the portable `.alma` format with import and deduplication.
 
 **Bring Your Own Keys**
-Use your own API keys for Anthropic, OpenAI, Google, DeepSeek, xAI, or Ollama. BYOK keys are encrypted at rest with AES-256-GCM. Available on Advanced plans and above.
+Use your own API keys for Anthropic, Replicate, and Leonardo. BYOK keys are encrypted at rest with AES-256-GCM. Available on Advanced plans and above.
 
 </td>
 </tr>
@@ -179,18 +184,46 @@ Use your own API keys for Anthropic, OpenAI, Google, DeepSeek, xAI, or Ollama. B
 
 <br>
 
-## Get Started
+## Get Alma
 
-The fastest way to use Alma is through the **web app** — sign up and start chatting in seconds. No downloads, no configuration.
-
-| Path | Status | Best For |
-|------|--------|----------|
-| [**Web App**](https://alma.olivares.ai) | Available | Everyone — sign up and chat instantly |
-| [**REST API**](https://olivares.ai/developers) | Available | Backend integrations (Advanced plan) |
-| [**JavaScript SDK**](https://www.npmjs.com/package/@olivaresai/alma-sdk) | Available | Node.js / TypeScript (Advanced plan) |
-| [**MCP Server**](https://olivares.ai/docs/mcp) | Beta | Claude Desktop, Cursor, Windsurf |
-| [**VSCode Extension**](https://olivares.ai/docs/vscode) | Beta | Development workflow |
-| **Mobile Apps** | Coming Soon | iOS and Android |
+<table>
+<tr><th>Platform</th><th>Download</th><th>Best For</th></tr>
+<tr>
+<td><strong>Web App</strong></td>
+<td><a href="https://alma.olivares.ai">alma.olivares.ai</a></td>
+<td>Everyone — sign up and chat instantly</td>
+</tr>
+<tr>
+<td><strong>MCP Server</strong></td>
+<td><a href="https://www.npmjs.com/package/@olivaresai/alma-mcp"><code>npm i @olivaresai/alma-mcp</code></a></td>
+<td>Claude Desktop, Cursor, Windsurf</td>
+</tr>
+<tr>
+<td><strong>VSCode Extension</strong></td>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=olivares.alma-vscode">VS Code Marketplace</a></td>
+<td>Development workflow</td>
+</tr>
+<tr>
+<td><strong>JavaScript SDK</strong></td>
+<td><a href="https://www.npmjs.com/package/@olivaresai/alma-sdk"><code>npm i @olivaresai/alma-sdk</code></a></td>
+<td>Node.js / TypeScript integrations</td>
+</tr>
+<tr>
+<td><strong>REST API</strong></td>
+<td><a href="https://olivares.ai/developers">Developer Docs</a></td>
+<td>Backend integrations (Advanced plan)</td>
+</tr>
+<tr>
+<td><strong>Android</strong></td>
+<td>Coming Soon</td>
+<td>Mobile — full chat with biometric auth</td>
+</tr>
+<tr>
+<td><strong>iOS</strong></td>
+<td>Coming Soon</td>
+<td>Mobile — full chat with Face ID</td>
+</tr>
+</table>
 
 <br>
 
@@ -200,15 +233,22 @@ The fastest way to use Alma is through the **web app** — sign up and start cha
 
 ## Models
 
-**3 intelligence tiers** powered by Anthropic's Claude models.
+**3 chat models** — all from Anthropic Claude, the industry leader in safety and capability.
 
-| Tier | Model | Context | Free | Paid |
-|------|-------|---------|:----:|:----:|
-| Normal | Claude Haiku 4.5 | 200K | Yes | Yes |
-| Advanced | Claude Sonnet 4.6 | 200K | | Yes |
-| Complex | Claude Opus 4.6 | 200K | | Yes |
+| Model | Alias | Context | Free | Pro+ |
+|-------|-------|---------|:----:|:----:|
+| Claude Haiku 4.5 | `claude-haiku` | 200K | Yes | Yes |
+| Claude Sonnet 4.6 | `claude-sonnet` | 200K | | Yes |
+| Claude Opus 4.6 | `claude-opus` | 200K | | Yes |
 
-The platform architecture supports additional providers (OpenAI, Google, DeepSeek, xAI). New models are added based on demand and quality standards.
+**2 image generation providers:**
+
+| Provider | Model | Cost/Image |
+|----------|-------|------------|
+| Replicate | Flux Pro | $0.04 |
+| Leonardo AI | Multiple models | $0.02 |
+
+All AI features consume from a cost-weighted weekly budget. BYOK (Bring Your Own Keys) available on Advanced plans and above.
 
 <br>
 
@@ -228,13 +268,14 @@ Start free. Upgrade when you need more.
 | **Procedures** | 10 | 100 | 500 | Unlimited | Unlimited |
 | **Environments** | 1 | 2 | 3 | Unlimited | Unlimited |
 | **Chat Models** | Haiku | All 3 | All 3 | All 3 | All 3 |
-| **Voice / Day** | 5 min | 60 min | 300 min | No cap* | No cap* |
-| **Web Search / Day** | 5 | 100 | 500 | No cap* | No cap* |
+| **Image Studio** | 1/day | Unlimited | Unlimited | Unlimited | Unlimited |
+| **Voice / Day** | 5 min | 60 min | 300 min | No limit | No limit |
+| **Web Search / Day** | 5 | 100 | 500 | No limit | No limit |
 | **BYOK** | | | Yes | Yes | Yes |
 | **API & MCP** | | | Yes | Yes | Yes |
 | **Buy Credits** | | Yes | Yes | Yes | Yes |
 
-\* All AI features (chat, voice, web search) consume from a weekly budget that resets automatically. "No cap" means no daily limit — usage is still governed by the weekly budget. Pro plans and above can purchase additional credit packs that never expire.
+All AI features (chat, voice, web search, images) consume from a weekly budget that resets automatically. Pro plans and above can purchase additional credit packs that never expire.
 
 [**Compare plans in detail**](https://olivares.ai/pricing)
 
@@ -246,7 +287,7 @@ Start free. Upgrade when you need more.
 
 ## REST API
 
-160+ endpoints covering every aspect of the memory system. All responses are JSON. Streaming chat via SSE. Requires an **Advanced** plan or above.
+180+ endpoints covering every aspect of the memory system. All responses are JSON. Streaming chat via SSE. Requires an **Advanced** plan or above.
 
 **Base URL**
 ```
@@ -299,10 +340,12 @@ GET    /chat/usage/history       Usage history
 POST   /chat/estimate            Estimate message cost
 POST   /chat/conversations       Create a conversation
 GET    /chat/conversations       List conversations
+GET    /chat/conversations/search  Search conversations
 GET    /chat/conversations/:id   Get conversation details
 PUT    /chat/conversations/:id   Update conversation
 DELETE /chat/conversations/:id   Delete conversation
 POST   /chat/conversations/:id/messages  Send message (SSE streaming)
+POST   /chat/conversations/:id/retry     Retry last response
 ```
 </details>
 
@@ -352,6 +395,16 @@ POST   /soul/versions/:id/restore  Restore to a previous version
 </details>
 
 <details>
+<summary><strong>Image Studio</strong></summary>
+
+```http
+POST   /images/generate          Generate an image
+GET    /images/history           Image generation history
+GET    /images/models            Available image models
+```
+</details>
+
+<details>
 <summary><strong>Voice</strong></summary>
 
 ```http
@@ -375,6 +428,28 @@ DELETE /environments/:id         Delete an environment
 </details>
 
 <details>
+<summary><strong>Files</strong></summary>
+
+```http
+POST   /files                    Upload a file (image, PDF, text)
+GET    /files/:id                Download a file
+GET    /files/:id/metadata       File metadata
+DELETE /files/:id                Delete a file
+```
+</details>
+
+<details>
+<summary><strong>Ideas</strong></summary>
+
+```http
+GET    /ideas                    List ideas and notes
+POST   /ideas                    Create an idea
+PUT    /ideas/:id                Update an idea
+DELETE /ideas/:id                Delete an idea
+```
+</details>
+
+<details>
 <summary><strong>BYOK</strong></summary>
 
 ```http
@@ -384,7 +459,7 @@ GET    /byok/:provider/test      Test a provider key
 DELETE /byok/:provider           Remove a provider key
 ```
 
-Providers: `anthropic`, `openai`, `google`, `deepseek`, `xai`, `ollama`
+Providers: `anthropic`, `replicate`, `leonardo`
 </details>
 
 <details>
@@ -398,6 +473,7 @@ GET    /export/all               Full GDPR data export
 
 GET    /admin/export/alma        Full .alma portable export
 POST   /admin/import/alma        Import from .alma file with dedup
+GET    /admin/insights           Learning dashboard data
 ```
 </details>
 
@@ -431,6 +507,9 @@ GET    /billing/credits/balance, /billing/credits/history, /billing/credits/pack
 
 # Teams (15+ endpoints)
 Full team management: create, invite, roles, billing, environments
+
+# Conversation Folders & Tags
+Full CRUD for organizing conversations into folders and tagging systems
 ```
 </details>
 
@@ -466,11 +545,11 @@ curl "https://alma.olivares.ai/api/v1/memories/search?q=preferences&mode=hybrid"
 
 <br>
 
-## MCP Server `Beta`
+## MCP Server
 
 Connect any MCP-compatible AI to Alma's memory layer.
 
-**Package:** `@olivaresai/alma-mcp` on npm
+**Install:** [`@olivaresai/alma-mcp`](https://www.npmjs.com/package/@olivaresai/alma-mcp) on npm
 
 ```json
 {
@@ -486,9 +565,9 @@ Connect any MCP-compatible AI to Alma's memory layer.
 
 **20 tools** including `get_context`, `search_memories`, `create_memory`, `chat`, `update_block`, `search_episodes`, `create_procedure`, `preview_context`, `export_data`, and more.
 
-**7 resources:** soul, memories, environments, conversations, budget, memories by category, blocks.
+**9 resources:** soul, memories, environments, conversations, budget, memories by category, blocks, episodes, procedures.
 
-Compatible with Claude Desktop, Cursor, Windsurf, and any MCP-compatible client.
+Compatible with **Claude Desktop**, **Cursor**, **Windsurf**, and any MCP-compatible client.
 
 <br>
 
@@ -496,14 +575,15 @@ Compatible with Claude Desktop, Cursor, Windsurf, and any MCP-compatible client.
 
 <br>
 
-## VSCode Extension `Beta`
+## VSCode Extension
 
-**Extension:** `alma-vscode` on the VSCode Marketplace
+**Install:** [`alma-vscode`](https://marketplace.visualstudio.com/items?itemName=olivares.alma-vscode) on the VS Code Marketplace
 
 - **Sidebar chat** with streaming responses and full memory context
 - **Memory browser** — search, filter, and manage memories without leaving the IDE
-- **Soul block editor** — configure AI personality with presets
-- **Context focus** — Alma knows what file and project you're working on
+- **Soul block editor** — configure AI personality with presets (Balanced, Creative, Technical, Mentor)
+- **Context focus** — Alma automatically knows what file and project you're working on
+- **Environment switching** — jump between memory spaces from the command palette
 - **Right-click to save** — select any text and save it as a memory
 - **Budget display** — remaining AI budget in the status bar
 
@@ -516,6 +596,8 @@ Compatible with Claude Desktop, Cursor, Windsurf, and any MCP-compatible client.
 ## JavaScript SDK
 
 Full TypeScript client for the Alma API. ESM, Node.js 18+.
+
+**Install:** [`@olivaresai/alma-sdk`](https://www.npmjs.com/package/@olivaresai/alma-sdk) on npm
 
 ```bash
 npm install @olivaresai/alma-sdk
@@ -552,21 +634,94 @@ await alma.chat.sendMessage(conversationId, {
 
 <br>
 
+## Mobile Apps
+
+Native iOS and Android apps built with Capacitor 7. Full chat experience with biometric authentication, push notifications, and offline-ready architecture.
+
+| Platform | Status | Auth |
+|----------|--------|------|
+| **Android** | Coming Soon | Biometric (Fingerprint) |
+| **iOS** | Coming Soon | Face ID / Touch ID |
+
+Both apps connect to the same Alma backend — your memories, conversations, and soul persist seamlessly between web, mobile, and extensions.
+
+<br>
+
+---
+
+<br>
+
+## Agent Tools
+
+When chatting with Alma, the AI has access to 6 specialized tools that extend its capabilities beyond conversation:
+
+| Tool | Description |
+|------|-------------|
+| `update_memory_block` | Edit soul blocks — worldview, style guide, user profile, learned patterns |
+| `search_memories` | Semantic search across long-term memory |
+| `search_conversations` | Search past conversation episodes |
+| `save_memory` | Save new facts to long-term memory |
+| `web_search` | Search the web (Brave + Tavily) |
+| `create_document` | Generate downloadable files (DOCX, XLSX, PPTX) |
+
+Tools execute transparently — you see exactly what the AI is doing, in real time, with full streaming feedback.
+
+<br>
+
+---
+
+<br>
+
+## Internationalization
+
+Alma speaks your language. 15 fully localized languages across the entire interface:
+
+Arabic, Chinese, Dutch, English, French, German, Hindi, Italian, Japanese, Korean, Portuguese, Russian, Spanish, Turkish, Ukrainian
+
+<br>
+
+---
+
+<br>
+
 ## Security & Privacy
 
 Your cognitive data is the most personal data there is. We treat it that way.
 
 - **Encryption** — All data encrypted at rest and in transit. BYOK keys use AES-256-GCM with per-record key derivation
-- **Authentication** — Passwords hashed with scrypt. API keys hashed with a one-way function. JWT sessions with httpOnly cookies
+- **Authentication** — Passwords hashed with PBKDF2-SHA512 (100K iterations). API keys hashed with HMAC-SHA256. JWT sessions with httpOnly cookies
 - **2FA** — TOTP-based two-factor authentication with recovery codes
 - **OAuth** — Sign in with Google or GitHub
+- **CSRF Protection** — Origin validation on all state-changing requests
+- **Rate Limiting** — Per-minute and per-day limits with IP-based lockout protection
 - **Isolation** — Memories are isolated per account and per environment
 - **No tracking** — No tracking cookies, no third-party analytics, no data selling
 - **GDPR** — Full data export and deletion at any time. No retention after deletion
-- **Rate limiting** — Per-minute and per-day limits to prevent abuse
 - **Transparency** — Every memory, episode, and procedure is visible and inspectable
+- **Audited** — 11 comprehensive security audits since launch, Swiss-grade quality principles
 
 If you downgrade or cancel, your data is never deleted automatically. You maintain read access to everything you've built.
+
+<br>
+
+---
+
+<br>
+
+## Infrastructure
+
+Built on Cloudflare's global edge network for speed, reliability, and data sovereignty.
+
+| Component | Technology |
+|-----------|-----------|
+| **API** | Cloudflare Workers (Hono) |
+| **Database** | Cloudflare D1 (SQLite) — 56 migrations |
+| **Vector Search** | Cloudflare Vectorize (2 indexes) |
+| **File Storage** | Cloudflare R2 |
+| **Caching** | Cloudflare KV |
+| **Budget Coordination** | Cloudflare Durable Objects |
+| **Frontend** | React 19 + Vite 6 on Cloudflare Pages |
+| **Background Jobs** | Cloudflare Queues with DLQ |
 
 <br>
 
@@ -603,6 +758,8 @@ When reporting an issue, please include:
 | **Philosophy** | [olivares.ai/philosophy](https://olivares.ai/philosophy) |
 | **SDK** | [@olivaresai/alma-sdk](https://www.npmjs.com/package/@olivaresai/alma-sdk) |
 | **MCP** | [@olivaresai/alma-mcp](https://www.npmjs.com/package/@olivaresai/alma-mcp) |
+| **VSCode** | [alma-vscode](https://marketplace.visualstudio.com/items?itemName=olivares.alma-vscode) |
+| **Types** | [@olivaresai/alma-types](https://www.npmjs.com/package/@olivaresai/alma-types) |
 | **Privacy** | [olivares.ai/privacy](https://olivares.ai/privacy) |
 | **Terms** | [olivares.ai/terms](https://olivares.ai/terms) |
 | **Contact** | hello@olivares.ai |
