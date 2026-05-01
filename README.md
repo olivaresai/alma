@@ -5,7 +5,7 @@
 <br>
 <br>
 
-### Persistent Memory for AI
+### The AI that remembers
 
 Every AI conversation starts from scratch.
 Weeks of context, preferences, decisions — gone the moment you close the tab.
@@ -15,23 +15,18 @@ Weeks of context, preferences, decisions — gone the moment you close the tab.
 <br>
 
 [![Website](https://img.shields.io/badge/olivares.ai-FE9A37?style=for-the-badge&logoColor=1A1A19)](https://olivares.ai)
-[![Launch App](https://img.shields.io/badge/Launch_App-1A1A19?style=for-the-badge)](https://alma.olivares.ai)
+[![Launch App](https://img.shields.io/badge/Launch_Alma-1A1A19?style=for-the-badge)](https://alma.olivares.ai)
 [![Documentation](https://img.shields.io/badge/Docs-2E2E2C?style=for-the-badge)](https://olivares.ai/docs)
 
 </div>
 
 <br>
 
-Alma is a persistent memory layer that captures facts, preferences, decisions, and behavioral patterns from your AI conversations — and makes them available across every session, every tool, every platform.
+Alma is a persistent memory layer for AI. It captures facts, preferences, decisions, and behavioral patterns from your conversations — and makes them available across every session, every tool, every platform.
 
-Day 1 and day 100 no longer feel the same. Your AI stops forgetting. It starts *understanding*.
+Day 1 and day 100 feel completely different. Your AI stops forgetting. It starts *understanding*.
 
 <br>
-<div align="center">
-  <img src="img/ChatAlmaLight01.png" alt="Alma by olivares.ai" width="800" />
-  <br><br>
-  <img src="img/ChatAlmaDark01.png" alt="Alma by olivares.ai" width="800" />
-</div>
 
 ---
 
@@ -108,7 +103,7 @@ Reviewed API architecture decisions
 Learned behavioral patterns and workflows. Procedures are trigger-action pairs that the AI picks up from observing how you work — from communication style to multi-step processes.
 
 ```
-When reviewing code → check errors first
+When reviewing code -> check errors first
 Use bullet points for technical topics
 Always suggest tests for new functions
 ```
@@ -121,7 +116,7 @@ Always suggest tests for new functions
 
 ### Soul Engine
 
-All three layers feed into the **Soul Engine** — a structured personality and context framework with 13 configurable blocks organized into three sections:
+All three layers feed into the **Soul Engine** — a structured personality and context framework with 12 configurable blocks organized into three sections:
 
 - **Identity** — who the AI is, its worldview, its principles
 - **Style** — communication patterns, anti-patterns, formatting rules
@@ -150,29 +145,63 @@ Hybrid search (keyword + semantic) surfaces the right context for each interacti
 **Background Processing**
 Learns while you chat. Memories are extracted, episodes are summarized, and procedures are refined — seamlessly in the background with zero latency impact.
 
-**Smart Deduplication**
-Semantic similarity detection prevents redundant memories. When a fact is restated, the existing memory is reinforced instead of duplicated.
+**Chat with Memory**
+Full streaming chat powered by Claude. Tool use, web search, document generation, canvas artifacts — all with your complete memory context. Conversation folders, tags, pinning, search.
 
 **Environments**
 Separate memory spaces for different contexts — work, personal, projects. Each environment has its own soul, its own memories, its own knowledge.
+
+**Voice**
+Speech-to-text via Deepgram Nova-2. Text-to-speech via ElevenLabs. Talk to your AI naturally, and it remembers what you said.
 
 </td>
 <td width="50%" valign="top">
 
 **Powered by Claude**
-Three Anthropic Claude models: Haiku (fast, everyday tasks), Sonnet (balanced quality and speed), and Opus (deep reasoning, complex work). Switch models mid-conversation without losing memory or context continuity.
+Three Anthropic Claude models: Haiku (fast, everyday tasks), Sonnet (balanced quality and speed), and Opus (deep reasoning, complex work). Switch models mid-conversation.
 
 **Image Studio**
-Generate images with Replicate Flux Pro and Leonardo AI. Standalone studio with model selection, style presets, size options, and a full generation history gallery. BYOK supported.
+Generate images with Replicate Flux Pro and Leonardo AI. Style presets, size options, and a full generation history gallery. BYOK supported.
 
-**Voice**
-Speech-to-text via Deepgram Nova-2. Text-to-speech via ElevenLabs. Talk to your AI naturally, and it remembers what you said.
+**Video Studio**
+Generate videos with Runway Gen-4. Text-to-video and image-to-video. Project management with scene planning, stitching, and YouTube metadata generation.
+
+**Music Studio**
+Generate music with ElevenLabs Music. Studio-grade audio up to 10 minutes. Vocals, lyrics, genre presets. Separate subscription tiers.
+
+**Audio Generation**
+Create music and audio with MiniMax Music 1.5. Up to 4 minutes per generation with vocals and lyrics support. Included in Pro and Max plans.
 
 **Export Everything**
 Conversations to PDF, DOCX, HTML, Markdown. Memories to JSON and XLSX. Full data dumps in the portable `.alma` format with import and deduplication.
 
 **Bring Your Own Keys**
-Use your own API keys for Anthropic, Replicate, and Leonardo. BYOK keys are encrypted at rest with AES-256-GCM. Available on Advanced plans and above.
+Use your own API keys for Anthropic, Replicate, and Leonardo. BYOK keys encrypted at rest with AES-256-GCM. Available on the Max plan.
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+**Code Workspace**
+Agent-powered code workspace. Write, review, test, explain, refactor, and debug code — all with your memory context. File management, search, Git operations, and skill execution.
+
+</td>
+<td width="33%" valign="top">
+
+**Flashcards**
+Spaced repetition learning with SM-2 algorithm. Create flashcards from your conversations and memories. Due date tracking and performance stats.
+
+</td>
+<td width="33%" valign="top">
+
+**Ideas & Tasks**
+Quick notes with reminders. Scheduled tasks that execute automatically — summaries, reports, reminders, and custom prompts on your schedule.
 
 </td>
 </tr>
@@ -187,7 +216,7 @@ Use your own API keys for Anthropic, Replicate, and Leonardo. BYOK keys are encr
 ## Get Alma
 
 <table>
-<tr><th>Platform</th><th>Download</th><th>Best For</th></tr>
+<tr><th>Platform</th><th>Access</th><th>Best For</th></tr>
 <tr>
 <td><strong>Web App</strong></td>
 <td><a href="https://alma.olivares.ai">alma.olivares.ai</a></td>
@@ -211,17 +240,12 @@ Use your own API keys for Anthropic, Replicate, and Leonardo. BYOK keys are encr
 <tr>
 <td><strong>REST API</strong></td>
 <td><a href="https://olivares.ai/developers">Developer Docs</a></td>
-<td>Backend integrations (Advanced plan)</td>
+<td>Backend integrations (Max plan)</td>
 </tr>
 <tr>
-<td><strong>Android</strong></td>
+<td><strong>Android / iOS</strong></td>
 <td>Coming Soon</td>
 <td>Mobile — full chat with biometric auth</td>
-</tr>
-<tr>
-<td><strong>iOS</strong></td>
-<td>Coming Soon</td>
-<td>Mobile — full chat with Face ID</td>
 </tr>
 </table>
 
@@ -233,22 +257,35 @@ Use your own API keys for Anthropic, Replicate, and Leonardo. BYOK keys are encr
 
 ## Models
 
-**3 chat models** — all from Anthropic Claude, the industry leader in safety and capability.
+**3 chat tiers** — all from Anthropic Claude.
 
-| Model | Alias | Context | Free | Pro+ |
-|-------|-------|---------|:----:|:----:|
-| Claude Haiku 4.5 | `claude-haiku` | 200K | Yes | Yes |
-| Claude Sonnet 4.6 | `claude-sonnet` | 200K | | Yes |
-| Claude Opus 4.6 | `claude-opus` | 200K | | Yes |
+| Tier | Model | Context | Starter | Pro | Max |
+|------|-------|---------|:-------:|:---:|:---:|
+| Fast | Claude Haiku 4.5 | 200K | Yes | Yes | Yes |
+| Balanced | Claude Sonnet 4.6 | 200K | Yes | Yes | Yes |
+| Powerful | Claude Opus 4.7 | 1M | — | Yes | Yes |
 
-**2 image generation providers:**
+**Image generation:**
 
 | Provider | Model | Cost/Image |
 |----------|-------|------------|
-| Replicate | Flux Pro | $0.04 |
-| Leonardo AI | Multiple models | $0.02 |
+| Replicate | Flux Pro 1.1 | ~$0.04 |
+| Leonardo AI | Lucid Origin | ~$0.02 |
 
-All AI features consume from a cost-weighted weekly budget. BYOK (Bring Your Own Keys) available on Advanced plans and above.
+**Video generation:**
+
+| Provider | Models | Pricing |
+|----------|--------|---------|
+| Runway | Gen-4 Turbo, Gen-4.5 | Credit-based |
+
+**Audio & Music:**
+
+| Provider | Model | Included In |
+|----------|-------|-------------|
+| MiniMax Music 1.5 (via Replicate) | Up to 4 min, vocals | Pro and Max plans |
+| ElevenLabs Music | Up to 10 min, studio-grade | Pro and Max plans |
+
+All AI features consume from a single cost-weighted weekly USD budget. BYOK available on the Max plan.
 
 <br>
 
@@ -258,26 +295,29 @@ All AI features consume from a cost-weighted weekly budget. BYOK (Bring Your Own
 
 ## Plans
 
-Start free. Upgrade when you need more.
+Three plans. One weekly USD AI budget that covers chat, voice, images, video and music from a single pool. Resets every Monday.
 
-| | Free | Pro | Advanced | Ultimate | Ultimate Max |
-|---|:---:|:---:|:---:|:---:|:---:|
-| **Price** | $0 | $19/mo | $49/mo | $149/mo | $249/mo |
-| **Memories** | 500 | 10,000 | 50,000 | Unlimited | Unlimited |
-| **Episodes** | 50 | Unlimited | Unlimited | Unlimited | Unlimited |
-| **Procedures** | 10 | 100 | 500 | Unlimited | Unlimited |
-| **Environments** | 1 | 2 | 3 | Unlimited | Unlimited |
-| **Chat Models** | Haiku | All 3 | All 3 | All 3 | All 3 |
-| **Image Studio** | 1/day | Unlimited | Unlimited | Unlimited | Unlimited |
-| **Voice / Day** | 5 min | 60 min | 300 min | No limit | No limit |
-| **Web Search / Day** | 5 | 100 | 500 | No limit | No limit |
-| **BYOK** | | | Yes | Yes | Yes |
-| **API & MCP** | | | Yes | Yes | Yes |
-| **Buy Credits** | | Yes | Yes | Yes | Yes |
+| | Starter | Pro | Max |
+|---|:---:|:---:|:---:|
+| **Price** | $14/mo | $29/mo | $99/mo |
+| **Weekly AI budget** | $2 | $5 | $15 |
+| **Chat models** | Haiku + Sonnet | + Opus 1M | + Opus 1M |
+| **Memories / episodes / procedures** | Unlimited | Unlimited | Unlimited |
+| **Image Studio** (Flux Pro + Leonardo) | Included | Included | Included |
+| **Voice** (STT + TTS) | Included | Included | Included |
+| **Video Studio** (Runway Gen-4 + HeyGen) | — | Included | Included |
+| **Audio** (MiniMax Music 1.5) | — | Included | Included |
+| **Studio-grade Music** (ElevenLabs Music) | — | Included | Included |
+| **REST API · VSCode · MCP · SDK** | — | — | Included |
+| **Bring Your Own Keys (BYOK)** | — | — | Included |
+| **Top-ups** | Yes | Yes | Yes |
+| **Support SLA** | 72h | 48h | 24h |
 
-All AI features (chat, voice, web search, images) consume from a weekly budget that resets automatically. Pro plans and above can purchase additional credit packs that never expire.
+Annual billing saves 2 months on all plans. All paid features share a single weekly budget — no separate add-ons.
 
-[**Compare plans in detail**](https://olivares.ai/pricing)
+Billing is processed by **Polar Software, Inc.** as our Merchant of Record (Polar uses Stripe as a card-network provider).
+
+[**Compare plans in detail &rarr;**](https://olivares.ai/pricing)
 
 <br>
 
@@ -287,229 +327,124 @@ All AI features (chat, voice, web search, images) consume from a weekly budget t
 
 ## REST API
 
-180+ endpoints covering every aspect of the memory system. All responses are JSON. Streaming chat via SSE. Requires an **Advanced** plan or above.
+100+ endpoints covering every aspect of the memory system. JSON responses. Streaming chat via SSE. Requires the **Max** plan.
 
 **Base URL**
 ```
-https://alma.olivares.ai/api/v1/
+https://alma.olivares.ai/api/v1
 ```
 
-**Authentication** — API key or JWT bearer token:
+**Authentication:**
 ```bash
-# API Key (recommended for scripts and integrations)
+# API Key (recommended)
 curl -H "X-API-Key: alma_sk_..." https://alma.olivares.ai/api/v1/memories
 
-# JWT Bearer (for web applications)
+# JWT Bearer
 curl -H "Authorization: Bearer eyJ..." https://alma.olivares.ai/api/v1/memories
 ```
 
 ### Endpoints
 
 <details>
-<summary><strong>Context Assembly</strong></summary>
+<summary><strong>Context Assembly</strong> — Build AI context from memory</summary>
 
 ```http
 POST   /context/assemble         Build the full AI context
-POST   /context/continue         Continue an existing conversation context
+POST   /context/continue         Continue an existing session
 POST   /context/focus            Update the active context focus
-POST   /context/preview          Preview the system prompt the LLM would see
+POST   /context/preview          Preview the assembled system prompt
 ```
 </details>
 
 <details>
-<summary><strong>Memories</strong></summary>
+<summary><strong>Memories</strong> — CRUD + semantic search</summary>
 
 ```http
 GET    /memories                 List memories with filters
-GET    /memories/search          Search via keyword, semantic, or hybrid
+GET    /memories/search          Search (keyword, semantic, or hybrid)
 GET    /memories/:id             Get a specific memory
 POST   /memories                 Create a memory
 PUT    /memories/:id             Update a memory
 DELETE /memories/:id             Delete a memory
-POST   /memories/extract         AI-powered memory extraction from text
+POST   /memories/extract         AI-powered extraction from text
 ```
 </details>
 
 <details>
-<summary><strong>Chat</strong></summary>
+<summary><strong>Chat</strong> — Streaming conversations with memory</summary>
 
 ```http
 GET    /chat/models              List available models
-GET    /chat/budget              Get current budget status
-GET    /chat/usage/history       Usage history
-POST   /chat/estimate            Estimate message cost
+GET    /chat/budget              Current budget status
 POST   /chat/conversations       Create a conversation
 GET    /chat/conversations       List conversations
-GET    /chat/conversations/search  Search conversations
-GET    /chat/conversations/:id   Get conversation details
-PUT    /chat/conversations/:id   Update conversation
-DELETE /chat/conversations/:id   Delete conversation
 POST   /chat/conversations/:id/messages  Send message (SSE streaming)
 POST   /chat/conversations/:id/retry     Retry last response
+POST   /chat/conversations/:id/fork      Fork conversation
 ```
 </details>
 
 <details>
-<summary><strong>Episodes</strong></summary>
+<summary><strong>Episodes & Procedures</strong></summary>
 
 ```http
-GET    /episodes                 List episodes
-GET    /episodes/search          Search episodes by topic
-GET    /episodes/:id             Get a specific episode
+GET    /episodes                 List episode summaries
 POST   /episodes                 Create an episode
-PUT    /episodes/:id             Update an episode
-DELETE /episodes/:id             Delete an episode
-```
-</details>
-
-<details>
-<summary><strong>Procedures</strong></summary>
-
-```http
-GET    /procedures               List procedures
-GET    /procedures/:id           Get a specific procedure
+GET    /procedures               List learned procedures
 POST   /procedures               Create a procedure
 POST   /procedures/:id/success   Mark successful execution
-PUT    /procedures/:id           Update a procedure
-DELETE /procedures/:id           Delete a procedure
 ```
 </details>
 
 <details>
-<summary><strong>Soul & Blocks</strong></summary>
+<summary><strong>Soul & Blocks</strong> — Personality configuration</summary>
 
 ```http
-GET    /blocks                   List memory blocks
-GET    /blocks/:label            Get a specific block
-POST   /blocks                   Create a custom block
+GET    /blocks                   List all memory blocks
 POST   /blocks/preset            Apply a soul preset
-POST   /blocks/init              Reset blocks to defaults
 PUT    /blocks/:label            Update a block
-DELETE /blocks/:label            Delete a custom block
-
-GET    /soul/versions/list       List soul version history
-POST   /soul/versions/snapshot   Create a manual snapshot
-GET    /soul/versions/:id        Get a specific version
-POST   /soul/versions/:id/restore  Restore to a previous version
+POST   /soul/versions/snapshot   Create a version snapshot
+POST   /soul/versions/:id/restore  Restore a previous version
 ```
 </details>
 
 <details>
-<summary><strong>Image Studio</strong></summary>
+<summary><strong>Media</strong> — Images, Video, Voice, Audio, Music</summary>
 
 ```http
 POST   /images/generate          Generate an image
-GET    /images/history           Image generation history
-GET    /images/models            Available image models
+POST   /video/generate           Generate a video
+POST   /voice/transcribe         Speech-to-text
+POST   /voice/synthesize         Text-to-speech
+POST   /audio/generate           Generate audio/music
+POST   /music/generate           Music Studio generation
 ```
 </details>
 
 <details>
-<summary><strong>Voice</strong></summary>
+<summary><strong>More</strong> — Environments, Files, Export, Teams, BYOK, Auth</summary>
 
 ```http
-GET    /voice/capabilities       Check available voice features
-POST   /voice/transcribe         Voice-to-text (Deepgram Nova-2)
-POST   /voice/synthesize         Text-to-speech (ElevenLabs)
-```
-</details>
+# Environments
+GET    /environments             List memory spaces
+POST   /environments             Create a new environment
 
-<details>
-<summary><strong>Environments</strong></summary>
-
-```http
-GET    /environments             List environments
-POST   /environments             Create an environment
-GET    /environments/:id         Get environment details
-PUT    /environments/:id         Update an environment
-POST   /environments/:id/default Set as default
-DELETE /environments/:id         Delete an environment
-```
-</details>
-
-<details>
-<summary><strong>Files</strong></summary>
-
-```http
-POST   /files                    Upload a file (image, PDF, text)
-GET    /files/:id                Download a file
-GET    /files/:id/metadata       File metadata
-DELETE /files/:id                Delete a file
-```
-</details>
-
-<details>
-<summary><strong>Ideas</strong></summary>
-
-```http
-GET    /ideas                    List ideas and notes
-POST   /ideas                    Create an idea
-PUT    /ideas/:id                Update an idea
-DELETE /ideas/:id                Delete an idea
-```
-</details>
-
-<details>
-<summary><strong>BYOK</strong></summary>
-
-```http
-GET    /byok                     List configured providers
-PUT    /byok/:provider           Save a provider key (AES-256-GCM encrypted)
-GET    /byok/:provider/test      Test a provider key
-DELETE /byok/:provider           Remove a provider key
-```
-
-Providers: `anthropic`, `replicate`, `leonardo`
-</details>
-
-<details>
-<summary><strong>Export</strong></summary>
-
-```http
-GET    /export/conversation/:id  Export conversation (md, html, pdf, docx)
-GET    /export/memories          Export memories (json, md, xlsx)
-GET    /export/soul              Export soul configuration (json, md)
+# Files & Export
+POST   /files/upload             Upload files (images, docs, text)
 GET    /export/all               Full GDPR data export
 
-GET    /admin/export/alma        Full .alma portable export
-POST   /admin/import/alma        Import from .alma file with dedup
-GET    /admin/insights           Learning dashboard data
-```
-</details>
+# Teams
+POST   /teams                    Create a team
+POST   /teams/:id/invitations    Invite members
 
-<details>
-<summary><strong>Auth, Billing, Teams & more</strong></summary>
+# BYOK
+PUT    /byok/:provider           Save encrypted API key
+GET    /byok/:provider/test      Test a provider key
 
-```http
-# Authentication (16 endpoints)
-POST   /auth/register, /auth/login, /auth/logout, /auth/logout-all
-GET    /auth/me, /auth/sessions, /auth/limits
-PUT    /auth/password
-DELETE /auth/account
-
-# Two-Factor Authentication
-POST   /auth/2fa/enable, /auth/2fa/verify, /auth/2fa/disable
-
-# OAuth
-GET    /auth/oauth/google, /auth/oauth/github
-GET    /auth/oauth/providers, /auth/oauth/accounts
-
-# API Keys
-GET    /auth/api-keys
-POST   /auth/api-keys
-DELETE /auth/api-keys/:id
-
-# Billing (12 endpoints)
-POST   /billing/checkout, /billing/portal, /billing/upgrade, /billing/cancel
-GET    /billing/status, /billing/invoices
-POST   /billing/credits/purchase
-GET    /billing/credits/balance, /billing/credits/history, /billing/credits/packages
-
-# Teams (15+ endpoints)
-Full team management: create, invite, roles, billing, environments
-
-# Conversation Folders & Tags
-Full CRUD for organizing conversations into folders and tagging systems
+# Auth (JWT, OAuth, 2FA, API Keys)
+POST   /auth/register            Create account (Turnstile)
+POST   /auth/login               Sign in
+POST   /auth/2fa/enable          Enable TOTP 2FA
 ```
 </details>
 
@@ -518,25 +453,21 @@ Full CRUD for organizing conversations into folders and tagging systems
 ### Quick Example
 
 ```bash
-# 1. Assemble context for your AI
+# Save a memory
+curl -X POST https://alma.olivares.ai/api/v1/memories \
+  -H "X-API-Key: alma_sk_..." \
+  -H "Content-Type: application/json" \
+  -d '{"content": "User prefers dark mode", "category": "preference", "importance": 8}'
+
+# Search memories
+curl "https://alma.olivares.ai/api/v1/memories/search?q=preferences&mode=hybrid" \
+  -H "X-API-Key: alma_sk_..."
+
+# Assemble context for your AI
 curl -X POST https://alma.olivares.ai/api/v1/context/assemble \
   -H "X-API-Key: alma_sk_..." \
   -H "Content-Type: application/json" \
   -d '{"maxTokens": 4000}'
-
-# 2. Save a memory
-curl -X POST https://alma.olivares.ai/api/v1/memories \
-  -H "X-API-Key: alma_sk_..." \
-  -H "Content-Type: application/json" \
-  -d '{
-    "content": "User prefers dark mode and minimal UI",
-    "category": "preference",
-    "importance": 8
-  }'
-
-# 3. Search memories
-curl "https://alma.olivares.ai/api/v1/memories/search?q=preferences&mode=hybrid" \
-  -H "X-API-Key: alma_sk_..."
 ```
 
 <br>
@@ -548,8 +479,6 @@ curl "https://alma.olivares.ai/api/v1/memories/search?q=preferences&mode=hybrid"
 ## MCP Server
 
 Connect any MCP-compatible AI to Alma's memory layer.
-
-**Install:** [`@olivaresai/alma-mcp`](https://www.npmjs.com/package/@olivaresai/alma-mcp) on npm
 
 ```json
 {
@@ -563,9 +492,9 @@ Connect any MCP-compatible AI to Alma's memory layer.
 }
 ```
 
-**20 tools** including `get_context`, `search_memories`, `create_memory`, `chat`, `update_block`, `search_episodes`, `create_procedure`, `preview_context`, `export_data`, and more.
+**35 tools** — memory, context, chat, search, episodes, procedures, environments, image generation, video, code workspace, and more.
 
-**9 resources:** soul, memories, environments, conversations, budget, memories by category, blocks, episodes, procedures.
+**10 resources** — soul, memories, environments, conversations, budget, blocks, episodes, procedures, video budget, memories by category.
 
 Compatible with **Claude Desktop**, **Cursor**, **Windsurf**, and any MCP-compatible client.
 
@@ -580,9 +509,9 @@ Compatible with **Claude Desktop**, **Cursor**, **Windsurf**, and any MCP-compat
 **Install:** [`alma-vscode`](https://marketplace.visualstudio.com/items?itemName=olivares.alma-vscode) on the VS Code Marketplace
 
 - **Sidebar chat** with streaming responses and full memory context
-- **Memory browser** — search, filter, and manage memories without leaving the IDE
-- **Soul block editor** — configure AI personality with presets (Balanced, Creative, Technical, Mentor)
-- **Context focus** — Alma automatically knows what file and project you're working on
+- **Memory browser** — search, filter, and manage memories from the IDE
+- **Soul block editor** — configure AI personality with presets
+- **Context focus** — Alma knows what file and project you're working on
 - **Environment switching** — jump between memory spaces from the command palette
 - **Right-click to save** — select any text and save it as a memory
 - **Budget display** — remaining AI budget in the status bar
@@ -597,8 +526,6 @@ Compatible with **Claude Desktop**, **Cursor**, **Windsurf**, and any MCP-compat
 
 Full TypeScript client for the Alma API. ESM, Node.js 18+.
 
-**Install:** [`@olivaresai/alma-sdk`](https://www.npmjs.com/package/@olivaresai/alma-sdk) on npm
-
 ```bash
 npm install @olivaresai/alma-sdk
 ```
@@ -608,23 +535,20 @@ import { AlmaClient } from '@olivaresai/alma-sdk';
 
 const alma = new AlmaClient({ apiKey: 'alma_sk_...' });
 
-// Assemble context for your AI
+// Assemble context
 const context = await alma.context.assemble({ maxTokens: 4000 });
 
 // Save a memory
 await alma.memories.create({
   content: 'User prefers TypeScript',
   category: 'preference',
-  importance: 8
+  importance: 8,
 });
-
-// Search memories
-const results = await alma.memories.search({ q: 'preferences', mode: 'hybrid' });
 
 // Stream a chat message
 await alma.chat.sendMessage(conversationId, {
   content: 'Hello',
-  onToken: (token) => process.stdout.write(token)
+  onToken: (token) => process.stdout.write(token),
 });
 ```
 
@@ -634,37 +558,23 @@ await alma.chat.sendMessage(conversationId, {
 
 <br>
 
-## Mobile Apps
-
-Native iOS and Android apps built with Capacitor 7. Full chat experience with biometric authentication, push notifications, and offline-ready architecture.
-
-| Platform | Status | Auth |
-|----------|--------|------|
-| **Android** | Coming Soon | Biometric (Fingerprint) |
-| **iOS** | Coming Soon | Face ID / Touch ID |
-
-Both apps connect to the same Alma backend — your memories, conversations, and soul persist seamlessly between web, mobile, and extensions.
-
-<br>
-
----
-
-<br>
-
 ## Agent Tools
 
-When chatting with Alma, the AI has access to 6 specialized tools that extend its capabilities beyond conversation:
+When chatting with Alma, the AI has access to specialized tools:
 
 | Tool | Description |
 |------|-------------|
-| `update_memory_block` | Edit soul blocks — worldview, style guide, user profile, learned patterns |
+| `update_memory_block` | Edit soul blocks — worldview, style guide, user profile |
 | `search_memories` | Semantic search across long-term memory |
 | `search_conversations` | Search past conversation episodes |
 | `save_memory` | Save new facts to long-term memory |
 | `web_search` | Search the web (Brave + Tavily) |
-| `create_document` | Generate downloadable files (DOCX, XLSX, PPTX) |
+| `deep_research` | Comprehensive multi-source web research |
+| `create_document` | Generate files (DOCX, XLSX, PPTX, MD, TXT, HTML, SVG) |
+| `open_canvas` | Create interactive canvas artifacts |
+| `edit_canvas` | Edit existing canvas artifacts |
 
-Tools execute transparently — you see exactly what the AI is doing, in real time, with full streaming feedback.
+Tools execute transparently with real-time streaming feedback.
 
 <br>
 
@@ -674,7 +584,7 @@ Tools execute transparently — you see exactly what the AI is doing, in real ti
 
 ## Internationalization
 
-Alma speaks your language. 15 fully localized languages across the entire interface:
+15 fully localized languages across the entire interface:
 
 Arabic, Chinese, Dutch, English, French, German, Hindi, Italian, Japanese, Korean, Portuguese, Russian, Spanish, Turkish, Ukrainian
 
@@ -689,18 +599,15 @@ Arabic, Chinese, Dutch, English, French, German, Hindi, Italian, Japanese, Korea
 Your cognitive data is the most personal data there is. We treat it that way.
 
 - **Encryption** — All data encrypted at rest and in transit. BYOK keys use AES-256-GCM with per-record key derivation
-- **Authentication** — Passwords hashed with PBKDF2-SHA512 (100K iterations). API keys hashed with HMAC-SHA256. JWT sessions with httpOnly cookies
-- **2FA** — TOTP-based two-factor authentication with recovery codes
+- **Authentication** — PBKDF2-SHA512 (100K iterations). API keys hashed with HMAC-SHA256. JWT with httpOnly cookies
+- **2FA** — TOTP with recovery codes. Lockout protection after 5 failed attempts
 - **OAuth** — Sign in with Google or GitHub
-- **CSRF Protection** — Origin validation on all state-changing requests
-- **Rate Limiting** — Per-minute and per-day limits with IP-based lockout protection
-- **Isolation** — Memories are isolated per account and per environment
+- **CSRF** — Origin validation on all state-changing requests
+- **Rate Limiting** — Per-minute and per-day limits with IP-based protection. Durable Objects for atomic enforcement
+- **Isolation** — Memories isolated per account and per environment
 - **No tracking** — No tracking cookies, no third-party analytics, no data selling
-- **GDPR** — Full data export and deletion at any time. No retention after deletion
-- **Transparency** — Every memory, episode, and procedure is visible and inspectable
-- **Audited** — 11 comprehensive security audits since launch, Swiss-grade quality principles
-
-If you downgrade or cancel, your data is never deleted automatically. You maintain read access to everything you've built.
+- **GDPR** — Full data export and deletion. No retention after deletion
+- **Audited** — 13 comprehensive security audits. Swiss-grade quality principles
 
 <br>
 
@@ -710,36 +617,20 @@ If you downgrade or cancel, your data is never deleted automatically. You mainta
 
 ## Infrastructure
 
-Built on Cloudflare's global edge network for speed, reliability, and data sovereignty.
+Built on Cloudflare's global edge network.
 
 | Component | Technology |
 |-----------|-----------|
-| **API** | Cloudflare Workers (Hono) |
-| **Database** | Cloudflare D1 (SQLite) — 56 migrations |
+| **API** | Cloudflare Workers (Hono 4) |
+| **Database** | Cloudflare D1 (96 migrations) |
 | **Vector Search** | Cloudflare Vectorize (2 indexes) |
+| **Embeddings** | OpenAI + Cloudflare Workers AI fallback |
 | **File Storage** | Cloudflare R2 |
-| **Caching** | Cloudflare KV |
+| **Cache & Rate Limiting** | Cloudflare KV |
 | **Budget Coordination** | Cloudflare Durable Objects |
-| **Frontend** | React 19 + Vite 6 on Cloudflare Pages |
-| **Background Jobs** | Cloudflare Queues with DLQ |
-
-<br>
-
----
-
-<br>
-
-## Report Issues
-
-Found a bug? Have a feature request? We welcome your feedback.
-
-- [**Open an issue**](https://github.com/olivaresai/alma/issues/new) — Bug reports and feature requests
-- [**Discussions**](https://github.com/olivaresai/alma/discussions) — Questions, ideas, and community
-
-When reporting an issue, please include:
-- What you expected vs. what happened
-- Steps to reproduce (if applicable)
-- Plan tier and client (web app, VSCode, MCP, API)
+| **Background Jobs** | Cloudflare Queues + DLQ |
+| **Frontend** | React 19, Vite 6, Tailwind 4 |
+| **Billing** | Polar (Merchant of Record) — subscriptions + top-ups |
 
 <br>
 
@@ -755,6 +646,7 @@ When reporting an issue, please include:
 | **App** | [alma.olivares.ai](https://alma.olivares.ai) |
 | **Documentation** | [olivares.ai/docs](https://olivares.ai/docs) |
 | **API Reference** | [olivares.ai/developers](https://olivares.ai/developers) |
+| **Pricing** | [olivares.ai/pricing](https://olivares.ai/pricing) |
 | **Philosophy** | [olivares.ai/philosophy](https://olivares.ai/philosophy) |
 | **SDK** | [@olivaresai/alma-sdk](https://www.npmjs.com/package/@olivaresai/alma-sdk) |
 | **MCP** | [@olivaresai/alma-mcp](https://www.npmjs.com/package/@olivaresai/alma-mcp) |
